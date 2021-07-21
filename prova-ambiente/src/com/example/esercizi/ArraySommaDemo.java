@@ -17,7 +17,7 @@ public class ArraySommaDemo {
 		}
 		
 		double somma = 0;
-		for(double valore : array) {
+		for(double valore : array) { // forEach
 			somma += valore;
 		}
 		System.out.println("La somma è: "+somma);
@@ -26,6 +26,28 @@ public class ArraySommaDemo {
 		for(int i=1; i<array.length; i+=2) {
 			somma += array[i];
 		}
-		System.out.println("La somma degli elementi dispari è: "+somma);
+		System.out.println("La somma degli elementi a indice dispari è: "+somma);
+		
+		somma = 0;
+		double sommaPari = 0;
+		for(int i=0; i<array.length; i++) {
+			// trovare condizioni di scarto => buttare tutti gli indici pari
+			if( i % 2 != 0 ) /* then */ {
+				somma += array[i]; // true
+			} else {
+				sommaPari += array[i]; // false
+			}
+		}
+		System.out.println("La somma degli elementi a indice dispari è: "+somma);
+		System.out.println("La somma degli elementi a indice pari è: "+sommaPari);
+		
+		int i=0;
+		while( i<array.length ) {
+			System.out.println(i+") "+array[i]);
+			i++; // incremento di fine ciclo
+		}
+		
+		
+		
 	}
 }
