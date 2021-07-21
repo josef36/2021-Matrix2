@@ -1,7 +1,6 @@
 package com.example.esercizi;
 
 import java.util.Random;
-import java.math.*;
 // EManuele
 public class EsercizioTombola {
 	public static void main(String[] args) {
